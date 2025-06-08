@@ -12,7 +12,7 @@
 
 {#if images.length > 0}
 	<!-- Main image preview -->
-	<img class="mb-4 w-80" src={images[selectedIndex]} alt="Selected" />
+	<img class="w-80" src={images[selectedIndex]} alt="Selected" />
 
 	<!-- Image thumbnails -->
 	<div class="flex flex-wrap gap-2">
