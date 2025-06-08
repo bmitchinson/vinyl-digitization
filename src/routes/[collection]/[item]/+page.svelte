@@ -4,6 +4,14 @@
 
 	export let data;
 	const item = data.item;
+
+	let currentlyPlaying: HTMLAudioElement | null = null;
+	function handlePlay(audioElement: HTMLAudioElement) {
+		if (currentlyPlaying && currentlyPlaying !== audioElement) {
+			currentlyPlaying.pause();
+		}
+		currentlyPlaying = audioElement;
+	}
 </script>
 
 <div class="flex flex-col justify-center gap-4">
@@ -16,7 +24,12 @@
 		{#each record.songs as song}
 			<div>
 				<h3>Song Title: {song.title}</h3>
-				<audio controls src={song.mp3Src} class="my-2 w-full">
+				<audio
+					controls
+					src={song.mp3Src}
+					class="my-2 w-full"
+					on:play={(e) => handlePlay(e.currentTarget)}
+				>
 					Your browser does not support the audio element.
 				</audio>
 			</div>
