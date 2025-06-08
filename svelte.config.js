@@ -1,6 +1,17 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { edCollectionOne } from './src/lib/pages-cms.js';
+import { vinylCollections } from './src/lib/pages-cms.js';
+
+const routes = vinylCollections
+	.map(({ collectionRoute, collectionItems }) => {
+		const collectionItemRoutes = collectionItems.map(
+			(item) => `/${collectionRoute}/${item.itemRoute}`
+		);
+		return [...collectionItemRoutes, `/${collectionRoute}`];
+	})
+	.flat();
+
+console.log('routes to prerender:', routes);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -14,11 +25,7 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter(),
 		prerender: {
-			entries: [
-				'/',
-				'/ed-collection-one',
-				...edCollectionOne.map((p) => `/ed-collection-one/${p.route}`)
-			]
+			entries: ['/', ...routes]
 		}
 	}
 };
