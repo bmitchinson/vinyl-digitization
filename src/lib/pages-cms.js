@@ -6,7 +6,6 @@ export const vinylCollections = [
 			{
 				artist: 'Rosevelt Highschool',
 				title: 'South Pacific',
-				description: 'description here',
 				itemRoute: 'south-pacific',
 				records: [
 					{
@@ -19,11 +18,11 @@ export const vinylCollections = [
 						],
 						songs: [
 							{
-								title: 'Test Song 1',
+								title: 'Side A',
 								mp3Src: '/ed-collection/songs/test.mp3'
 							},
 							{
-								title: 'Test Song 2',
+								title: 'Side B',
 								mp3Src: '/ed-collection/songs/test.mp3'
 							}
 						]
@@ -33,7 +32,6 @@ export const vinylCollections = [
 			{
 				artist: 'Rosevelt Highschool',
 				title: 'South Pacific 2',
-				description: 'description here',
 				itemRoute: 'south-pacific-two',
 				records: [
 					{
@@ -60,7 +58,6 @@ export const vinylCollections = [
 			{
 				artist: 'Rosevelt Highschool',
 				title: 'South Pacific 3',
-				description: 'description here',
 				itemRoute: 'south-pacific-three',
 				records: [
 					{
