@@ -34,7 +34,8 @@ export const vinylCollections = [
 						photos: ['/ed-collection/imgs/sp-carefully-taught.jpg'],
 						songs: [
 							{
-								title: 'Carefully Taught / This Nearly Was Mine (Ed Bittle) / Finale Ultimo (Ed)',
+								title:
+									'Carefully Taught / This Nearly Was Mine (Ed Bittle) / Finale Ultimo (Ed Bittle)',
 								mp3Src: '/ed-collection/songs/highschool_carefully_taught.mp3'
 							}
 						]
@@ -56,7 +57,7 @@ export const vinylCollections = [
 						songs: [
 							{
 								title:
-									"This Is How It Feels (Ed) / Encore: I'm Gonna Wash / Final Act 1 / Opening Act 2",
+									"This Is How It Feels (Ed Bittle) / Encore: I'm Gonna Wash / Final Act 1 / Opening Act 2",
 								mp3Src: '/ed-collection/songs/highschool_this_is_how_it_feels.mp3'
 							}
 						]
@@ -87,7 +88,7 @@ export const vinylCollections = [
 						photos: ['/ed-collection/imgs/sp-some-enchanted.jpg'],
 						songs: [
 							{
-								title: 'Some Enchanted Evening / Finaletto / Bloody Mary',
+								title: 'Some Enchanted Evening (Ed Bittle) / Finaletto / Bloody Mary',
 								mp3Src: '/ed-collection/songs/highschool_some_enchanted.mp3'
 							}
 						]
