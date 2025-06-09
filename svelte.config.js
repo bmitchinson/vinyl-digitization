@@ -11,7 +11,7 @@ const routes = vinylCollections
 	})
 	.flat();
 
-console.log('routes to prerender:', routes);
+console.log('dynamic routes to prerender:', routes);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
