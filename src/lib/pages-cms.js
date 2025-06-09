@@ -1,6 +1,6 @@
 export const vinylCollections = [
 	{
-		collectionName: 'Ed Collection',
+		collectionName: "Ed's Collection",
 		collectionRoute: 'ed-collection',
 		collectionItems: [
 			{
