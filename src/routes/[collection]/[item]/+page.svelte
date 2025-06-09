@@ -14,6 +14,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Vinyl - {item.title}</title>
+</svelte:head>
+
 <div class="flex flex-col justify-center gap-4">
 	<div>
 		<h2>Title: {item.title}</h2>

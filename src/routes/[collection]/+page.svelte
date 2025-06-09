@@ -4,6 +4,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Vinyl - {data.collectionName}</title>
+</svelte:head>
+
 <h1 class="mb-4 text-2xl">{data.collectionName}</h1>
 <div class="mx-auto flex w-full flex-wrap justify-center gap-16">
 	{#each data.collectionItems as collectionItem}
